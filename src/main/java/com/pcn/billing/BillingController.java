@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping ("/gw/billing/nextgen/bill")
 public class BillingController {
     
-    
+
     @GetMapping("/hello-world")
     public String helloWorld() {
         return "Hello from Spring Boot Microservice from Google Could !!!";
@@ -17,6 +17,13 @@ public class BillingController {
     @GetMapping("/overview")
     public String overview() {
         return "This is bill overview";
+    }
+
+
+
+    @GetMapping("/summary")
+    public String summary() {
+        return "This is bill summary";
     }
 
 }
